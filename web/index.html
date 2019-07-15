@@ -15,9 +15,10 @@
 <script type="text/javascript" src="https://55th.jyg1.ooo/images/jwplayer.js"></script>
 <div id="myvideo_1">Please install Flash to see this player.</div>
 <script type="text/javascript">
-jwplayer('myvideo_1').setup({
+var res={cn:'{server}/_site_15_0_pauyf.agqgi.pbz/cn/live400/playlist.m3u8',ap:' {server}/_site_15_0_yvir.agqvzt.pbz/aplive200/playlist.m3u8',ue:'{server}/_site_15_0_yvir.agqvzt.pbz/live330/playlist.m3u8'}
+var parm={
        //新唐人中国频道直播(支持从本地播放)
-       file: '{server}/_site_15_0_yvir.agqvzt.pbz/live330/playlist.m3u8',
+       file: '',
        image: '',
        width: '320',
        height: '240',
@@ -26,8 +27,13 @@ jwplayer('myvideo_1').setup({
        allowscriptaccess: 'always',
        autostart: true,
        analytics: {enabled:false, cookies:false}
-});
+}
+parm.file=res.cn;
+jwplayer('myvideo_1').setup(parm);
 </script>
+<a href="javascript:void(0);" onclick="parm.file=res.cn;jwplayer('myvideo_1').setup(parm);">[中国频道]</a>
+<a href="javascript:void(0);" onclick="parm.file=res.ap;jwplayer('myvideo_1').setup(parm);">[亚太频道]</a>
+<a href="javascript:void(0);" onclick="parm.file=res.ue;jwplayer('myvideo_1').setup(parm);">[美东频道]</a>
 <p>[海外禁闻]<br></p>
 <a href="http://369a.wyjp.ga/?id=2" target="_blank">动态网</a> <a href="http://369a.wyjp.ga/?id=5" target="_blank">新唐人</a> <a href="http://369a.wyjp.ga/?id=7" target="_blank">大纪元</a> <a href="http://369a.wyjp.ga/?id=8" target="_blank">退党网</a> <a href="http://369a.wyjp.ga/?id=3" target="_blank">明慧网</a><br/>
 <a href="/jyg.apk" target="_blank">聚缘阁代理手机版</a>
@@ -36,4 +42,3 @@ jwplayer('myvideo_1').setup({
  联系聚缘阁:juyuange@gmail.com
  
 </body></html>
-
